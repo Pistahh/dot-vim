@@ -13,7 +13,7 @@ set cursorline
 set softtabstop=4
 set shiftwidth=4
 colorscheme pista
-set guifont=DejaVu\ Sans\ Mono\ 8
+set guifont=DejaVu\ Sans\ Mono\ 10
 set expandtab
 set cinkeys=0{,0}:,0#,!^F
 autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
@@ -44,3 +44,4 @@ imap <A-7> <Esc>7gt
 imap <A-8> <Esc>8gt
 imap <A-9> <Esc>9gt
 set noeb vb t_vb=
+
