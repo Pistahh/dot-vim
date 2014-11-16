@@ -43,3 +43,4 @@ imap <A-6> <Esc>6gt
 imap <A-7> <Esc>7gt
 imap <A-8> <Esc>8gt
 imap <A-9> <Esc>9gt
+set noeb vb t_vb=
