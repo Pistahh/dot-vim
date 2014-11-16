@@ -1,7 +1,6 @@
 set showmode
 set hlsearch
 set incsearch
-set number
 set ignorecase
 set nowrapscan
 set cindent
