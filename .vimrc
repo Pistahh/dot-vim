@@ -1,3 +1,28 @@
+"Vundle
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'tpope/vim-fugitive'
+Plugin 'rust-lang/rust.vim'
+Plugin 'Valloric/YouCompleteMe'
+call vundle#end()
+filetype plugin indent on
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_rust_checkers = ['rustc']
+let g:syntastic_enable_perl_checker = 1
+let g:syntastic_perl_checkers = ['perl']
+
 set showmode
 set hlsearch
 set incsearch
@@ -6,14 +31,15 @@ set nowrapscan
 set cindent
 set smartindent
 set autoindent
-filetype indent on
+"filetype indent on
 set background=dark
 syntax enable
 set cursorline
 set softtabstop=4
+set backspace=2
 set shiftwidth=4
 colorscheme pista
-set guifont=DejaVu\ Sans\ Mono\ 10
+set guifont=DejaVu\ Sans\ Mono\ 13
 set expandtab
 set cinkeys=0{,0}:,0#,!^F
 autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
@@ -21,7 +47,7 @@ autocmd FileType C set tabstop=8|set shiftwidth=8|set expandtab
 set smarttab
 set encoding=utf-8
 set fileencodings=utf-8
-filetype plugin on
+"filetype plugin on
 let g:html_tag_case = 'lowercase'
 let g:do_xhtml_mappings = 'yes'
 execute 'set listchars+=tab:'.nr2char(187).nr2char(183)
@@ -44,4 +70,4 @@ imap <A-7> <Esc>7gt
 imap <A-8> <Esc>8gt
 imap <A-9> <Esc>9gt
 set noeb vb t_vb=
-
+"
