@@ -1,14 +1,6 @@
 "Vundle
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'vim-syntastic/syntastic'
-Plugin 'tpope/vim-fugitive'
-Plugin 'rust-lang/rust.vim'
-Plugin 'Valloric/YouCompleteMe'
-call vundle#end()
 filetype plugin indent on
 
 set statusline+=%#warningmsg#
